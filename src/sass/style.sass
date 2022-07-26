@@ -1,0 +1,119 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.container 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 100% 
+    height: 100%
+
+//topo da página 
+header
+    background-color: #20232A
+    color: #61dafb
+    padding: 15px 5%
+
+    p 
+        font-weight:  bold
+        font-size: 22px
+
+main
+    display: flex
+    flex-direction: column
+    text-align: center
+    flex: 1 0 auto
+    
+    section.box-title
+        text-align: center
+        font-size: 23px
+        background-color: #282C34
+        padding: 30px 0 45px 0
+        margin-bottom: 20px
+
+        h1
+            
+            font-weight: 600
+            padding: 10px 0
+            color: #61dafb
+
+        p
+            color: white
+            font-weight: 500
+            margin: 25px 0
+
+        a.btn
+            background-color:  #61dafb
+            padding: 7px 35px
+            color: #000
+            text-decoration: none
+            font-size: 16px
+            border-radius: 20px
+
+            &:hover
+                background-color:  #42a1bb
+                color: #FFF
+
+    section.box-requisitos
+        margin-top: 30px
+
+        h2
+            font-size: 20px
+            font-weight: 600
+            padding-bottom: 20px
+
+        p
+            font-size: 18px
+            margin-bottom: 20px
+
+        .box-cards
+            display: flex
+            flex-direction: row
+            justify-content: center
+            flex-wrap: wrap
+
+            .card
+                background-color: #282C34
+                width: calc(100% /3) - 5%
+                padding: 20px 30px
+                margin: 0 15px 20px 15px 
+                border-radius: 5px
+                text-align: center
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+
+                @media only screen and (max-width: 768px)
+                    width: calc(100% /2) - 5%
+
+                    &:nth-child(3)
+                        width: 95%
+                        
+                @media only screen and (max-width: 616px)
+                    width: 95%
+                
+                h3
+                    color: #eb9c0a
+                    font-size: 18px
+                    font-weight: bold
+                    padding: 10px 0
+
+                p
+                    color: #FFF
+                    font-size: 16px
+                    font-weight: 400
+                    padding: 0 20px
+            //.cards
+        //.box-cards
+    //.box-requisitos
+//main
+
+footer
+    flex-shrink: 0
+    padding: 20px 0
+    font-size: 16px
+    background-color: #d9dedf
+    margin-top: 50px
+    text-align: center
+    width: 100%
+    object-position: 0
