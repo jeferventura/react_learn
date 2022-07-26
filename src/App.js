@@ -10,7 +10,7 @@ function App() {
 
         <main>
           <section className="box-title">
-            <h1>React JS</h1>
+            <h1>React JS</h1>  
             <p>Biblioteca JavaScript ara criar SPAs</p>
             <a href="#" className="btn">Site Oficial</a>
           </section>
